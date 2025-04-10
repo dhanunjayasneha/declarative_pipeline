@@ -13,12 +13,12 @@ pipeline{
       }
      stage('testing phase'){
           steps{
-            server
+             echo 'this is a testing stage'
          }
        }
      stage('deploy phase'){
          steps{
-            deploy information
+            echo 'deploy information'
           }
        }
     }
