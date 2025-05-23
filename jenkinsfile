@@ -3,12 +3,12 @@ pipeline{
    stages{
      stage('Fetching the code from remote repo'){
          steps {
-          git branch: 'main', url: 'https://github.com/dhanunjayasneha/maven_cont.git'
+          git branch: 'main', url: 'https://github.com/dhanunjayasneha/maven.git'
            }
        }
      stage('build phase'){
         steps{
-        build 'build_phase'
+        build 'maven'
         }
       }
      stage('testing phase'){
