@@ -8,7 +8,7 @@ pipeline{
        }
      stage('build phase'){
         steps{
-          echo 'this is a build stage'
+          build 'maven'
         }
       }
      stage('testing phase'){
